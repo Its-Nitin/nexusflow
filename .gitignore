@@ -1,0 +1,39 @@
+# --- Secrets (standard 09: no secrets in git, ever) ---
+.env
+.env.*
+!.env.example
+
+# --- Maven ---
+target/
+# Newer Maven Wrapper versions download the jar; keep the .properties committed.
+.mvn/wrapper/maven-wrapper.jar
+
+# --- IDEs ---
+.idea/
+*.iml
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.classpath
+.project
+.settings/
+.factorypath
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Logs and temp files ---
+*.log
+tmp/
+
+# --- Frontend (from M15) ---
+node_modules/
+dist/
+.angular/
+
+# --- Python (from M19) ---
+__pycache__/
+*.py[cod]
+.venv/

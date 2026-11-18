@@ -1,0 +1,17 @@
+# Line endings: LF everywhere by default (Docker, WSL, CI and Spotless all expect LF).
+# Must exist before the first commit, so CRLF never enters the history.
+* text=auto eol=lf
+
+# Windows-only scripts must keep CRLF to run in cmd.exe (e.g. mvnw.cmd).
+*.cmd text eol=crlf
+*.bat text eol=crlf
+
+# Binary files: never normalise or diff.
+*.pdf  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.jar  binary
+*.zip  binary
